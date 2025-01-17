@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Showcase Website</title>
+<link rel="stylesheet" href="111.css"> 
+
+<header>
+  <h1>Jack store<img src="logo.jpg" alt="Logo" class="logo"></h1> 
+  <nav class="navbar">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="shop.html">shop</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<body>
+<div class="content">
+  <div class="card">
+    <h3>Gamepads</h3>
+    <div class="carousel">
+      <img src="11.jpg" alt="Accounting" class="active">
+      <img src="33.png" alt="Finance">
+      <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+      <a class="next" onclick="moveSlide(1)">&#10095;</a>
+    </div>
+    <p>$40.00 Wireless Gaming Controller, Joystick Gamepad With</p>
+    <p>Dual-Vibration PC Game Controller Compatible With</p>
+    <p>PS5, Switch, Windows 10/8/7 PC, Laptop, TV Box, Android MobilePhones, 6.5Ft USB Cable</p>
+  </div>
+  <!-- Add more cards for other courses -->
+</div>
+
+
+<div class="advantage">
+  <h2>Other recommendations</h2>
+  <div class="advantage-cards">
+    <div class="card">
+      <img src="44.jpg" alt="Dedicated Student Support">
+      <h3>Phone</h3>
+    </div>
+    <div class="card">
+      <img src="55.png" alt="Multi Cultural Environment">
+      <h3>Earphone</h3>
+    </div>
+    <div class="card">
+      <img src="66.jpg" alt="Modern Well Equipped Classroom">
+      <h3>Keyboard</h3>
+    </div>
+    <div class="card">
+      <img src="77.jpg" alt="Flexible Payment Options">
+      <h3>Mouse</h3>
+    </div>
+  </div>
+</div>
+
+
+<div class="footer">
+  <p>&copy; 2024 Jack Jin Jiabo. All rights reserved.</p>
+</div>
+
+<script>
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function moveSlide(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("carousel img");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
