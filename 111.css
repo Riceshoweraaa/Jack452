@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  background-color: #008000; /* 修改为绿色 */
+  background-color: #008000; 
   color: white;
   display: flex;
   align-items: center;
@@ -31,13 +31,13 @@ header h1 {
 }
 
 header h1 .logo {
-  width: 50px; /* 根据需要调整logo大小 */
+  width: 50px; 
   height: auto;
   margin-left: 10px;
 }
 
 .navbar {
-  background-color: #008000; /* 修改为绿色 */
+  background-color: #008000; 
   color: white;
   padding: 10px;
   text-align: center;
@@ -155,14 +155,14 @@ header h1 .logo {
 }
 
 .footer {
-  background-color: #008000; /* 修改为绿色 */
+  background-color: #008000; 
   color: white;
   text-align: center;
   padding: 10px;
-  margin-top: auto; /* 将footer推到底部 */
+  margin-top: auto; 
 }
 
-/* 特色项目区域样式 */
+
 .featured-project {
   background-color: #ffffff;
   border: 1px solid #eaeaea;
@@ -176,7 +176,7 @@ header h1 .logo {
   margin-bottom: 10px;
 }
 
-/* 项目画廊样式 */
+
 .project-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -214,7 +214,7 @@ header h1 .logo {
   color: #666;
 }
 
-/* 轮播图样式 */
+
 .carousel {
   position: relative;
   width: 100%;
